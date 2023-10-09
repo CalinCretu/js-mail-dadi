@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Patrick+Hand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dekko', cursive;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%
+  }
+
+  50% {
+    background-position: 100% 19%
+  }
+
+  100% {
+    background-position: 0% 82%
+  }
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.input-box {
+  margin: 20px 0;
+}
+
+input {
+  width: 300px;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: black;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: ;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#success,
+#error {
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+.msg {
+  margin-top: 50px;
+  font-size: 20px;
+}
